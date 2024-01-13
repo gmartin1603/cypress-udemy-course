@@ -13,7 +13,7 @@ describe('Excel test',function(){
 
   it('Conduit - Valid Credentials',function(){
       cy.visit('https://react-redux.realworld.io/')
-      cy.contains('Sign in').click()
+      cy.contains('Sign inn').click()
       cy.get('input[type="email"]').type(data[0].username)
       cy.get('input[type="password"]').type(data[0].password)
       cy.get('button[type="submit"]').click()

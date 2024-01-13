@@ -1,9 +1,9 @@
 /// <reference types="Cypress" />
 
-import LandingPage from "../pages/LandingPage";
-import HomePage from "../pages/HomePage";
-import LoginPage from "../pages/LoginPage";
-import SettingsPage from "../pages/SettingsPage";
+import LandingPage from "./pages/LandingPage";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import SettingsPage from "./pages/SettingsPage";
 
 describe("Page Object Model Implementation", function () {
   const landingPage = new LandingPage();
