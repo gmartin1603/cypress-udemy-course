@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress open",
-    "test:headless": "npx cypress run"
+    "open": "cypress open",
+    "test:headless": "npx cypress run",
+    "smoke-test": "cypress run --spec \"cypress\\/e2e\\/smokeTest\\/Tc_01SmokeTest.spec.cy.js",
+    "test:chrome": "cypress run --browser chrome --headed"
   },
   "author": "gmartin",
   "license": "ISC",
