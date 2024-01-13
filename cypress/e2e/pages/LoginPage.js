@@ -22,6 +22,10 @@ class LoginPage {
   clickSubmitButton() {
     cy.get(this.getSubmitButton()).click()
   }
+
+  checkErrorMessage() {
+    cy.get('.error-messages').should('contain', 'email or password is invalid')
+  }
 }
 
 export default LoginPage
